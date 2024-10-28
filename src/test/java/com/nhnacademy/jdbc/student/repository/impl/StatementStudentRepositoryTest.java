@@ -29,7 +29,7 @@ class StatementStudentRepositoryTest {
             String name="학생" + i;
             Student.GENDER gender = Student.GENDER.M;
             int age =iterator.next();
-            Student student = new Student(id, name, gender,age);
+            Student student = new Student(id, name, gender, age);
             studentRepository.deleteById(id);
             studentRepository.save(student);
         }
