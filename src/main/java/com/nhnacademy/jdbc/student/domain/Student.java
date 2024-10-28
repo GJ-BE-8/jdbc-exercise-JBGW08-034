@@ -21,9 +21,33 @@ public class Student {
         this.gender = gender;
         this.age = age;
         this.createdAt = LocalDateTime.now();
+    }
 
-        if (Objects.isNull(id)) {
-            throw new IllegalStateException();
-        }
+    public Student (String id, String name, GENDER gender, Integer age, LocalDateTime createdAt) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.createdAt = createdAt;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public GENDER getGender() {
+        return gender;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 }
