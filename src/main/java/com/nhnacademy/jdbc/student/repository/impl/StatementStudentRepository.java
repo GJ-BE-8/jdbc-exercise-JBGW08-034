@@ -14,6 +14,7 @@ import java.util.Optional;
 @Slf4j
 public class StatementStudentRepository implements StudentRepository {
 
+    String sql = new Studnet(String id, )
     @Override
     public int save(Student student){
         //todo#1 insert student
