@@ -14,7 +14,6 @@ public class BasicConnectionPool  {
     private final Queue<Connection> connections;
 
     public BasicConnectionPool(String driverClassName, String jdbcUrl, String username, String password, int maximumPoolSize)  {
-
         this.jdbcUrl = jdbcUrl;
         this.username = username;
         this.password = password;
@@ -28,6 +27,7 @@ public class BasicConnectionPool  {
     private void checkDriver(){
         //todo#1 driverClassName에 해당하는 class가 존재하는지 check합니다.
         //존재하지 않는다면 RuntimeException 예외처리.
+        if ()
     }
 
     private void initialize(){
