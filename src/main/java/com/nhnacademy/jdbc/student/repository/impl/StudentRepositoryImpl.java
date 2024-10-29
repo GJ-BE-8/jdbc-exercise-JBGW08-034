@@ -51,9 +51,7 @@ public class StudentRepositoryImpl implements StudentRepository {
             throw new RuntimeException(e);
         } finally {
             try {
-                if (!rs.isClosed()) {
-                    rs.close();
-                }
+                rs.close();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
