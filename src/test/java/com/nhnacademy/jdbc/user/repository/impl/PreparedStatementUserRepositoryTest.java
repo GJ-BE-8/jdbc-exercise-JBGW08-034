@@ -59,7 +59,6 @@ class PreparedStatementUserRepositoryTest {
         String id="user1";
         String password="' or '1'='1";
 
-
         Optional<User> userOptional = userRepository.findByUserIdAndUserPassword(id,password);
         Assertions.assertFalse(userOptional.isPresent());
     }
