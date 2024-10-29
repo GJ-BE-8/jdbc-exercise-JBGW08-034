@@ -31,9 +31,7 @@ public class ClubRepositoryImpl implements ClubRepository {
             throw new RuntimeException(e);
         } finally {
             try {
-                if (!rs.isClosed()) {
-                    rs.close();
-                }
+                rs.close();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
@@ -96,9 +94,7 @@ public class ClubRepositoryImpl implements ClubRepository {
             throw new RuntimeException(e);
         } finally {
             try {
-                if (!rs.isClosed()) {
-                    rs.close();
-                }
+                rs.close();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
