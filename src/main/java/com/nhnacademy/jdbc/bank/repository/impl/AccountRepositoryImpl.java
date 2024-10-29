@@ -26,9 +26,7 @@ public class AccountRepositoryImpl implements AccountRepository {
             throw new RuntimeException(e);
         } finally {
             try {
-                if (!rs.isClosed()) {
-                    rs.close();
-                }
+                rs.close();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
